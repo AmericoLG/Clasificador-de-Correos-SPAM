@@ -1,14 +1,11 @@
-¡Excelente! Un buen **README** es la cara del proyecto y es fundamental para que cualquiera (o tú mismo en el futuro) sepa cómo echarlo a andar en segundos.
-
-Aquí tienes un diseño profesional en Markdown que resume todo lo que hemos construido siguiendo tu documentación:
 
 ---
 
-# 📧 Clasificador de Correos Spam
+#  Clasificador de Correos Spam
 
 Este proyecto es un sistema de **Machine Learning supervisado** que utiliza el algoritmo **Multinomial Naive Bayes** para categorizar mensajes como **Spam** o **No Spam**. Cuenta con un backend robusto en Python y una interfaz moderna en React.
 
-## 🚀 Estructura del Proyecto
+##  Estructura del Proyecto
 
 * **Backend:** FastAPI, Scikit-learn, Pandas.
 * **Frontend:** React, Axios.
@@ -16,7 +13,7 @@ Este proyecto es un sistema de **Machine Learning supervisado** que utiliza el a
 
 ---
 
-## 🛠️ Instalación y Configuración
+##  Instalación y Configuración
 
 ### 1. Clonar el Repositorio
 
@@ -51,7 +48,7 @@ npm install
 
 ---
 
-## 🧠 Entrenamiento del Modelo (Primeros Pasos)
+##  Entrenamiento del Modelo (Primeros Pasos)
 
 Antes de iniciar la aplicación, es necesario generar el modelo entrenado (Persistencia RF-05). Hemos incluido un script con un **dataset de ejemplo** para inicializar el sistema:
 
@@ -67,7 +64,7 @@ python entrenar_inicial.py
 
 ---
 
-## 🏃 Ejecución del Proyecto
+##  Ejecución del Proyecto
 
 Para que el sistema funcione, ambos servidores deben estar corriendo simultáneamente:
 
@@ -95,13 +92,3 @@ npm start
 
 ---
 
-## 📊 Funcionalidades Completadas
-
-* [x] **RF-01**: Carga de datos etiquetados (Script inicial).
-* [x] **RF-02**: Preprocesamiento de texto (NLP).
-* [x] **RF-03**: Entrenamiento del modelo Naive Bayes.
-* [x] **RF-04**: Clasificación de correos en tiempo real.
-* [x] **RI-03**: Visualización del nivel de confianza por predicción.
-* [x] **RI-05**: Dashboard con estadísticas de análisis.
-
----
