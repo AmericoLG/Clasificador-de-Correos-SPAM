@@ -1,0 +1,13 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/models/*.pkl
+
+# React
+frontend/node_modules/
+frontend/build/
+.DS_Store
+
+# Variables de entorno
+.env
