@@ -1,57 +1,64 @@
-Lo que has redactado es un excelente **Manual de Instalación y Configuración Técnica** (también conocido como *README* o *Guía de Despliegue*). Es fundamental para que otro desarrollador o un evaluador técnico pueda hacer correr tu proyecto.
+# MANUAL DE USUARIO SISTEMA CLASIFICADOR DE SPAM
 
-Sin embargo, un **Manual de Usuario** es totalmente distinto: el usuario final no sabe qué es un repositorio, un entorno virtual o un archivo `.pkl`. El usuario solo quiere saber **cómo usar la herramienta para detectar spam**.
+Este manual ha sido diseñado para guiar al usuario en el uso de la plataforma de detección inteligente de mensajes. El sistema permite analizar textos de forma instantánea para identificar posibles riesgos o publicidad no deseada.
 
-Aquí tienes una propuesta de cómo sería el **Manual de Usuario** para tu proyecto, manteniendo el nivel de formalidad y extensión que buscamos:
+## BIENVENIDA AL SISTEMA
+La plataforma utiliza tecnología avanzada para analizar el lenguaje y ayudarle a decidir si un mensaje es seguro o si debe ser tratado con precaución. El objetivo principal es ofrecerle una herramienta de apoyo en la gestión de su información diaria.
 
----
+## INICIO DE LA APLICACIÓN
+Para comenzar a utilizar la herramienta, simplemente acceda a la dirección web proporcionada por el administrador. Verá una pantalla limpia con un espacio central diseñado para la interacción directa.
 
-# MANUAL DE USUARIO: SISTEMA CLASIFICADOR DE SPAM
+![Imagen 1: Vista general de la pantalla principal del clasificador]
 
-**Proyecto:** Identificador de correos Spam - Inteligencia Artificial
-**Autor:** Americo Russell Lovera Garcia
+## COMPONENTES PRINCIPALES DE LA PÁGINA
+La interfaz es sumamente sencilla y consta de los siguientes elementos visuales.
 
-## 1. INTRODUCCIÓN
+Caja de texto Es el lugar donde usted debe colocar el mensaje que desea revisar.
+Botón Analizar Es el mando que inicia el proceso de revisión inteligente.
+Panel de Resultado Es el recuadro que le indicará la categoría del mensaje una vez terminado el proceso.
 
-Bienvenido al Sistema de Clasificación de Mensajes. Esta herramienta utiliza algoritmos de aprendizaje supervisado para ayudarle a distinguir entre comunicaciones legítimas y mensajes no deseados (Spam). El sistema analiza el contenido textual, identifica patrones sospechosos y entrega un diagnóstico basado en la probabilidad estadística.
+## INSTRUCCIONES DE USO PASO A PASO
 
-## 2. ACCESO AL SISTEMA
+PASO 1 PREPARACIÓN DEL MENSAJE
+Busque el mensaje o correo electrónico que le genera dudas. Copie el texto principal del mensaje. No es necesario copiar el nombre del remitente ni la fecha, solo el contenido del mensaje.
 
-Para utilizar la aplicación, asegúrese de que el servicio esté activo y acceda a través de su navegador web.
+PASO 2 INGRESO Y ANÁLISIS
+Diríjase a la plataforma y pegue el texto dentro del recuadro blanco central. Una vez que el texto esté allí, haga clic en el botón Analizar. Notará que el sistema procesa la información en menos de un segundo.
 
-* **Dirección local:** `http://localhost:3000`
-* **Compatibilidad:** Se recomienda el uso de navegadores modernos como Google Chrome, Mozilla Firefox o Microsoft Edge para garantizar la correcta visualización de la interfaz.
+![Imagen 2: Ejemplo de un mensaje pegado listo para ser revisado]
 
-## 3. DESCRIPCIÓN DE LA INTERFAZ
+PASO 3 LECTURA DEL RESULTADO
+El sistema le mostrará un veredicto basado en los patrones encontrados en el texto.
 
-La interfaz ha sido diseñada para ser intuitiva y minimalista, dividiéndose en tres áreas principales:
+Mensaje Legítimo Ham
+Si el resultado indica que el mensaje es Ham o Legítimo, significa que no se han encontrado elementos sospechosos y el correo parece ser una comunicación normal.
 
-1. **Caja de Entrada de Texto:** Espacio principal donde deberá escribir o pegar el contenido del correo que desea analizar.
-2. **Botón de Clasificación:** Activa el motor de inteligencia artificial para procesar el mensaje.
-3. **Panel de Resultados:** Zona donde se mostrará el veredicto final (Spam o No Spam) y, opcionalmente, el nivel de confianza del modelo.
+![Imagen 3: Ejemplo de un resultado positivo y seguro]
 
-## 4. GUÍA DE USO PASO A PASO
+Mensaje de Spam
+Si el resultado indica que el mensaje es Spam, el sistema ha detectado que el texto tiene características típicas de publicidad masiva, estafas o contenido no solicitado. Se recomienda tener precaución con este tipo de mensajes.
 
-### Paso 1: Preparación del Mensaje
+![Imagen 4: Ejemplo de un mensaje detectado como riesgo]
 
-Localice el correo electrónico que desea verificar. Copie el cuerpo del mensaje (el texto principal) evitando incluir encabezados técnicos o firmas muy extensas para obtener una mayor precisión.
+## CONSEJOS PARA OBTENER MEJORES RESULTADOS
+Para que el sistema sea lo más preciso posible, tenga en cuenta las siguientes recomendaciones.
 
-### Paso 2: Ingreso de Datos
+Longitud del mensaje El sistema funciona mejor con oraciones completas. Si solo pone una palabra, el análisis podría no tener suficiente información.
+Claridad del texto Evite pegar códigos extraños o muchos números sin sentido, ya que esto puede confundir la interpretación del sistema.
+Privacidad El análisis se realiza al momento. Su texto es procesado para darle una respuesta y no se queda guardado para otros fines.
 
-Pegue el texto en el área central de la aplicación. El sistema soporta mensajes en diversos formatos, pero se recomienda que el texto sea claro y representativo del contenido que sospecha que es spam.
+## PREGUNTAS FRECUENTES
 
-### Paso 3: Ejecución del Análisis
+¿El sistema puede equivocarse?
+Como toda herramienta tecnológica, existe una pequeña posibilidad de error. Siempre use su criterio personal además del resultado del sistema.
 
-Haga clic en el botón **"Analizar Mensaje"** (o el nombre que tenga tu botón en React). El sistema enviará la información al servidor de inteligencia artificial.
+¿Puedo analizar mensajes en otros idiomas?
+El sistema está optimizado para el idioma en el que fue entrenado originalmente. Si analiza textos en otros idiomas, la precisión podría variar.
 
-### Paso 4: Interpretación de Resultados
+¿Qué hago si el mensaje es Spam?
+Si el sistema confirma sus sospechas, lo más recomendable es no hacer clic en ningún enlace que contenga ese mensaje y eliminarlo de su bandeja de entrada.
 
-El sistema responderá de forma inmediata con una de las siguientes etiquetas:
-
-* **SPAM (No Deseado):** El mensaje presenta características claras de publicidad engañosa, estafas o contenido masivo.
-* **HAM (Legítimo):** El mensaje parece ser una comunicación normal y segura.
-
-## 5. RECOMENDACIONES PARA EL USUARIO
-
-* **Mensajes muy cortos:** Si ingresa una sola palabra (ej. "Hola"), el sistema podría tener dificultades para clasificarlo. Intente ingresar frases completas.
-* **Idiomas:** El modelo ha sido entrenado principalmente con el dataset proporcionado; los resultados son más precisos cuando el idioma del mensaje coincide con el del entrenamiento.
+## CRÉDITOS
+Desarrollado por Americo Russell Lovera Garcia.
+Proyecto de Demostración de Competencias Universidad UCATEC.
+Marzo 2026.
