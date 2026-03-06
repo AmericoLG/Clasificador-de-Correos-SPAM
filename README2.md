@@ -6,9 +6,9 @@ Este manual ha sido diseñado para guiar al usuario en el uso de la plataforma d
 La plataforma utiliza tecnología avanzada para analizar el lenguaje y ayudarle a decidir si un mensaje es seguro o si debe ser tratado con precaución. El objetivo principal es ofrecerle una herramienta de apoyo en la gestión de su información diaria.
 
 ## INICIO DE LA APLICACIÓN
-Para comenzar a utilizar la herramienta, simplemente acceda a la dirección web proporcionada por el administrador. Verá una pantalla limpia con un espacio central diseñado para la interacción directa.
+Para comenzar a utilizar la herramienta, simplemente acceda a la dirección web proporcionada. Verá una pantalla limpia con un espacio central diseñado para la interacción directa.
 
-![Imagen 1: Vista general de la pantalla principal del clasificador]
+![Pantalla de inicio del sistema](inicio.png)
 
 ## COMPONENTES PRINCIPALES DE LA PÁGINA
 La interfaz es sumamente sencilla y consta de los siguientes elementos visuales.
@@ -25,7 +25,7 @@ Busque el mensaje o correo electrónico que le genera dudas. Copie el texto prin
 PASO 2 INGRESO Y ANÁLISIS
 Diríjase a la plataforma y pegue el texto dentro del recuadro blanco central. Una vez que el texto esté allí, haga clic en el botón Analizar. Notará que el sistema procesa la información en menos de un segundo.
 
-![Imagen 2: Ejemplo de un mensaje pegado listo para ser revisado]
+![Proceso de ingreso de texto](ingreso_mensaje.png)
 
 PASO 3 LECTURA DEL RESULTADO
 El sistema le mostrará un veredicto basado en los patrones encontrados en el texto.
@@ -33,12 +33,12 @@ El sistema le mostrará un veredicto basado en los patrones encontrados en el te
 Mensaje Legítimo Ham
 Si el resultado indica que el mensaje es Ham o Legítimo, significa que no se han encontrado elementos sospechosos y el correo parece ser una comunicación normal.
 
-![Imagen 3: Ejemplo de un resultado positivo y seguro]
+![Resultado de mensaje seguro](resultado_seguro.png)
 
 Mensaje de Spam
 Si el resultado indica que el mensaje es Spam, el sistema ha detectado que el texto tiene características típicas de publicidad masiva, estafas o contenido no solicitado. Se recomienda tener precaución con este tipo de mensajes.
 
-![Imagen 4: Ejemplo de un mensaje detectado como riesgo]
+![Resultado de mensaje sospechoso](resultado_spam.png)
 
 ## CONSEJOS PARA OBTENER MEJORES RESULTADOS
 Para que el sistema sea lo más preciso posible, tenga en cuenta las siguientes recomendaciones.
@@ -46,17 +46,6 @@ Para que el sistema sea lo más preciso posible, tenga en cuenta las siguientes 
 Longitud del mensaje El sistema funciona mejor con oraciones completas. Si solo pone una palabra, el análisis podría no tener suficiente información.
 Claridad del texto Evite pegar códigos extraños o muchos números sin sentido, ya que esto puede confundir la interpretación del sistema.
 Privacidad El análisis se realiza al momento. Su texto es procesado para darle una respuesta y no se queda guardado para otros fines.
-
-## PREGUNTAS FRECUENTES
-
-¿El sistema puede equivocarse?
-Como toda herramienta tecnológica, existe una pequeña posibilidad de error. Siempre use su criterio personal además del resultado del sistema.
-
-¿Puedo analizar mensajes en otros idiomas?
-El sistema está optimizado para el idioma en el que fue entrenado originalmente. Si analiza textos en otros idiomas, la precisión podría variar.
-
-¿Qué hago si el mensaje es Spam?
-Si el sistema confirma sus sospechas, lo más recomendable es no hacer clic en ningún enlace que contenga ese mensaje y eliminarlo de su bandeja de entrada.
 
 ## CRÉDITOS
 Desarrollado por Americo Russell Lovera Garcia.
